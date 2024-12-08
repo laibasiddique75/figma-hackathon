@@ -75,43 +75,6 @@ const Banner1 = () => {
 
 </div>
 
-{/* 
- <div className="bg-black text-white h-60 container ">
-    <h1 className="pt-20">STAY UPTO DATE ABOUT <br></br>OUR LATEST OFFERS</h1>
-
-
-   <div className="container flex text-black flex-col md:flex-row items-center mt-6 md:justify-end md:mt-[-140px] px-4">
-  <div className="relative mb-4 md:mb-0 md:mr-4">
-    <input
-      type="email"
-      placeholder="Enter Your Email Address"
- 
-      className="rounded-pill p-3 pl-40 pr-3 w-[350px] text-center"  
-    />
-     <Image
-      src="/mail.png"
-      alt="Mail Icon"
-      width={24}
-      height={24}
-      className="absolute left-4 top-1/2 transform -translate-y-1/2" 
-    /> 
-  </div>
-</div> 
-
-
-<div className="mt-4 flex justify-center md:justify-end px-4">
-  <button
-    type="button"
-    className="btn btn-light rounded-pill p-3 w-full max-w-[350px] text-center "
-  >
-    Subscribe to Newsletter
-  </button>
-</div>
-
-
-</div>  */}
- 
-
 
 
  <div className="container bg-black flex flex-col md:flex-row items-center md:items-start justify-between px-6 py-10">

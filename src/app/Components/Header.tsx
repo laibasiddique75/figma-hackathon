@@ -63,6 +63,8 @@ const Header = () => {
             <Link href="/ProductDetailPage" className="mt-2 text-black">Product Detail Page</Link>
          
 
+
+            <Link href="/Cart" className="mt-2 text-black">Cart</Link>
           </ul>
 
           {/* Search Bar */}

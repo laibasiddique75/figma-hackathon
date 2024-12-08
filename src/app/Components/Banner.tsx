@@ -7,7 +7,7 @@ const Banner = () => {
 <div className="container col-xxl-8 px-4 py-5 bg-[#F2F0F1]">
     <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
       <div className="col-10 col-sm-8 col-lg-6">
-        {/* <img src="bootstrap-themes.png" className="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy"> */}
+
         <Image src="/couple1.png" alt="" width={1440} height={663}/>
       </div>
       <div className="col-lg-6">
