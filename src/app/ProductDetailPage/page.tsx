@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import Footer from '../Components/Footer';
-import Header from '../Components/Header';
+// import Header from '../Components/Header';
 
 const page = () => {
   return (
     <div>
 
-      <Header/>
+      {/* <Header/> */}
 
 
 <div className="container mx-auto p-4">
@@ -103,7 +103,7 @@ const page = () => {
 
 
 
-<div className='container flex justify-between mt-7'>
+{/* <div className='container flex justify-between mt-7'>
 
   <Image src="/card7.png" alt='' width={500} height={241.58}/>
   <Image src="/card6.png" alt='' width={500} height={241.58}/>
@@ -120,7 +120,74 @@ const page = () => {
 
   <Image src="/card2.png" alt='' width={500} height={241.58}/>
   <Image src="/card1.png" alt='' width={500} height={241.58}/>
+</div> */}
+
+
+
+
+<div className="container grid grid-cols-1 md:grid-cols-2 gap-4 mt-7">
+  <Image
+    src="/card7.png"
+    alt=""
+    width={500}
+    height={241.58}
+    className="w-full h-auto"
+  />
+  <Image
+    src="/card6.png"
+    alt=""
+    width={500}
+    height={241.58}
+    className="w-full h-auto"
+  />
 </div>
+
+<div className="container grid grid-cols-1 md:grid-cols-2 gap-4 mt-7">
+  <Image
+    src="/card4.png"
+    alt=""
+    width={500}
+    height={241.58}
+    className="w-full h-auto"
+  />
+  <Image
+    src="/card3.png"
+    alt=""
+    width={500}
+    height={241.58}
+    className="w-full h-auto"
+  />
+</div>
+
+<div className="container grid grid-cols-1 md:grid-cols-2 gap-4 mt-7">
+  <Image
+    src="/card2.png"
+    alt=""
+    width={500}
+    height={241.58}
+    className="w-full h-auto"
+  />
+  <Image
+    src="/card1.png"
+    alt=""
+    width={500}
+    height={241.58}
+    className="w-full h-auto"
+  />
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div className='flex justify-center'>
 <button type="button" className="btn btn-light mt-7 rounded-pill">Load More Reviews</button>
 </div>

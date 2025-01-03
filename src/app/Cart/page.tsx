@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import Header from '../Components/Header'
+// import Header from '../Components/Header'
 import Footer from '../Components/Footer';
 
 const page = () => {
   return (
     <div>
-      <Header/>
+      {/* <Header/> */}
 
       <div className="container mx-auto p-4">
   {/* Breadcrumbs */}
@@ -16,23 +16,31 @@ const page = () => {
   </div>
 
 
-<div className="container px-4 py-5" id="hanging-icons">
-  <h2 className="pb-2 border-bottom font-bold text-4xl">YOUR CART</h2>
+
+  <div className="container px-4 py-5" id="hanging-icons">
+  <h2 className="pb-2 border-b font-bold text-2xl sm:text-3xl md:text-4xl">YOUR CART</h2>
 
   <div className="flex flex-col lg:flex-row lg:justify-between lg:gap-8 mt-5">
     {/* Cart Items Section */}
     <div className="flex flex-col gap-6 lg:w-2/3">
-      <div className="flex items-start gap-4">
-        <Image src="/white1.png" alt="" width={124} height={124} />
-        <div>
-          <h3 className="font-bold text-2xl">Gradient Graphic T-shirt</h3>
-          <p>Size: Large</p>
-          <p>Color: White</p>
-          <div className="flex justify-between items-center">
-            <h1 className="font-bold">$145</h1>
+      {/* Item 1 */}
+      <div className="flex flex-col sm:flex-row items-start gap-4">
+        <Image
+          src="/white1.png"
+          alt="Gradient Graphic T-shirt"
+          width={124}
+          height={124}
+          className="w-32 h-32 object-cover"
+        />
+        <div className="flex-1">
+          <h3 className="font-bold text-lg md:text-2xl">Gradient Graphic T-shirt</h3>
+          <p className="text-sm md:text-base">Size: Large</p>
+          <p className="text-sm md:text-base">Color: White</p>
+          <div className="flex justify-between items-center mt-3">
+            <h1 className="font-bold text-lg md:text-xl">$145</h1>
             <button
               type="button"
-              className="btn btn-light rounded-pill px-4 py-3 w-[150px]"
+              className="btn btn-light rounded-pill px-4 py-2 sm:py-3 w-[120px] md:w-[150px]"
             >
               - 1 +
             </button>
@@ -40,17 +48,24 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex items-start gap-4">
-        <Image src="/check.png" alt="" width={124} height={124} />
-        <div>
-          <h3 className="font-bold text-2xl">CHECKERED SHIRT</h3>
-          <p>Size: Medium</p>
-          <p>Color: Red</p>
-          <div className="flex justify-between items-center">
-            <h1 className="font-bold">$180</h1>
+      {/* Item 2 */}
+      <div className="flex flex-col sm:flex-row items-start gap-4">
+        <Image
+          src="/check.png"
+          alt="Checkered Shirt"
+          width={124}
+          height={124}
+          className="w-32 h-32 object-cover"
+        />
+        <div className="flex-1">
+          <h3 className="font-bold text-lg md:text-2xl">Checkered Shirt</h3>
+          <p className="text-sm md:text-base">Size: Medium</p>
+          <p className="text-sm md:text-base">Color: Red</p>
+          <div className="flex justify-between items-center mt-3">
+            <h1 className="font-bold text-lg md:text-xl">$180</h1>
             <button
               type="button"
-              className="btn btn-light rounded-pill px-4 py-3 w-[150px]"
+              className="btn btn-light rounded-pill px-4 py-2 sm:py-3 w-[120px] md:w-[150px]"
             >
               - 1 +
             </button>
@@ -58,17 +73,24 @@ const page = () => {
         </div>
       </div>
 
-      <div className="flex items-start gap-4">
-        <Image src="/blue.png" alt="" width={124} height={124} />
-        <div>
-          <h3 className="font-bold text-2xl">SKINNY FIT JEANS</h3>
-          <p>Size: Large</p>
-          <p>Color: Blue</p>
-          <div className="flex justify-between items-center">
-            <h1 className="font-bold">$240</h1>
+      {/* Item 3 */}
+      <div className="flex flex-col sm:flex-row items-start gap-4">
+        <Image
+          src="/blue.png"
+          alt="Skinny Fit Jeans"
+          width={124}
+          height={124}
+          className="w-32 h-32 object-cover"
+        />
+        <div className="flex-1">
+          <h3 className="font-bold text-lg md:text-2xl">Skinny Fit Jeans</h3>
+          <p className="text-sm md:text-base">Size: Large</p>
+          <p className="text-sm md:text-base">Color: Blue</p>
+          <div className="flex justify-between items-center mt-3">
+            <h1 className="font-bold text-lg md:text-xl">$240</h1>
             <button
               type="button"
-              className="btn btn-light rounded-pill px-4 py-3 w-[150px]"
+              className="btn btn-light rounded-pill px-4 py-2 sm:py-3 w-[120px] md:w-[150px]"
             >
               - 1 +
             </button>
@@ -78,38 +100,38 @@ const page = () => {
     </div>
 
     {/* Order Summary Section */}
-    <div className="flex flex-col gap-6 lg:w-1/3 bg-gray-100 p-6 rounded-lg shadow-lg">
-      <h1 className="font-bold text-xl">ORDER SUMMARY</h1>
+    <div className="flex flex-col gap-6 lg:w-1/3 bg-gray-100 p-4 md:p-6 rounded-lg shadow-lg mt-6 lg:mt-0">
+      <h1 className="font-bold text-lg md:text-xl">ORDER SUMMARY</h1>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between text-sm md:text-base">
         <p>Subtotal</p>
         <h2 className="font-bold">$565</h2>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between text-sm md:text-base">
         <p>Discount (-20%)</p>
         <h2 className="text-red-500 font-bold">-$113</h2>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between text-sm md:text-base">
         <p>Delivery</p>
         <h2 className="font-bold">$15</h2>
       </div>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between text-sm md:text-base">
         <p>Total</p>
         <h2 className="font-bold">$467</h2>
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col sm:flex-row gap-4">
         <input
           type="text"
           placeholder="Add Promo Code"
-          className="rounded-pill text-center"
+          className="rounded-pill text-center border py-2 sm:py-3 flex-1"
         />
         <button
           type="button"
-          className="btn btn-dark rounded-pill "
+          className="btn btn-dark rounded-pill px-4 py-2 sm:py-3"
         >
           Apply Now
         </button>
@@ -118,7 +140,7 @@ const page = () => {
       <div>
         <button
           type="button"
-          className="btn btn-dark rounded-pill px-8 py-3 w-full"
+          className="btn btn-dark rounded-pill px-6 py-3 w-full"
         >
           Go To Check Out
         </button>
@@ -133,14 +155,6 @@ const page = () => {
 
 
 
-
-
-
-
-
-
-
-</div>
 
 <div className="container bg-black flex flex-col md:flex-row items-center md:items-start justify-between px-6 py-10">
   {/* Left Side with Centered Text */}
@@ -184,7 +198,7 @@ const page = () => {
 
 <Footer/>
     </div>
-
+</div>
 
   )
 }

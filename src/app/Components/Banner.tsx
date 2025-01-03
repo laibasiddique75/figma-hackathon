@@ -11,7 +11,7 @@ const Banner = () => {
         <Image src="/couple1.png" alt="" width={1440} height={663}/>
       </div>
       <div className="col-lg-6">
-        <h1 className=" fw-bold  lh-1 mb-3 text-7xl">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+        <h1 className=" fw-bold  lh-1 mb-3 text-6xl">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
         <p className="lead">Browse through our diverse range of meticulously crafted garments, designed <br></br>to bring out your individuality and cater to your sense of style.</p>
         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
     
