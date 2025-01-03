@@ -1,23 +1,23 @@
 import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
-  import { Filter } from "lucide-react"
-  import { Button } from "@/components/ui/button"
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+import { Filter } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
-  
-  export function DressStyle() {
-    return (
-
-        <div className="p-5">
+export function DressStyle() {
+  return (
+    <div className="p-5">
+      {/* Header Section */}
       <div className="flex justify-between items-center">
-            <h1 className="font-bold">Filters</h1>
-            <Filter/>
-            </div>
+        <h1 className="font-bold">Filters</h1>
+        <Filter />
+      </div>
 
-      <Accordion type="single" collapsible className="w-full">
+      {/* Accordion Section */}
+      <Accordion type="single" collapsible className="w-full mt-4">
         <AccordionItem value="item-1">
           <AccordionTrigger>Is it accessible?</AccordionTrigger>
           <AccordionContent>
@@ -27,34 +27,29 @@ import {
         <AccordionItem value="item-2">
           <AccordionTrigger>Is it styled?</AccordionTrigger>
           <AccordionContent>
-            Yes. It comes with default styles that matches the other
-            components&apos; aesthetic.
+            Yes. It comes with default styles that match the other components&apos; aesthetic.
           </AccordionContent>
         </AccordionItem>
-
         <AccordionItem value="item-3">
           <AccordionTrigger>Is it animated?</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            Yes. It&apos;s animated by default, but you can disable it if you prefer.
           </AccordionContent>
         </AccordionItem>
-
         <AccordionItem value="item-4">
-          <AccordionTrigger>Is it animated?</AccordionTrigger>
+          <AccordionTrigger>Can I customize it?</AccordionTrigger>
           <AccordionContent>
-            Yes. It's animated by default, but you can disable it if you prefer.
+            Yes. It&apos;s fully customizable, allowing you to adapt it to your needs.
           </AccordionContent>
         </AccordionItem>
-
       </Accordion>
 
-
-      <div className="flex justify-center items-start">
-    
-       <Button variant="outline" className="w-[90%] bg-black text-white">Button</Button>
-
+      {/* Button Section */}
+      <div className="flex justify-center items-start mt-6">
+        <Button variant="outline" className="w-[90%] bg-black text-white">
+          Button
+        </Button>
       </div>
-      </div>
-    )
-  }
-  
+    </div>
+  );
+}
