@@ -7,7 +7,7 @@ import { DressStyle } from '../Components/DressStyle'
 import Categories from '../Components/Shirts'
 
 // import Header from '../Components/Header'
-import Image from 'next/image'
+
 // import Footer from '../Components/Footer'
 const page = () => {
   return (

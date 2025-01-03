@@ -14,7 +14,6 @@ export default function Home() {
 {/* <Header/>; */}
 <Banner/>
 <Card/>
-
 <Banner1/>
 <Footer/>
 
